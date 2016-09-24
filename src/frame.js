@@ -1,7 +1,10 @@
 import React from 'react'
+import Radium from 'radium'
 
-import styles from './frame-styles';
+import styles from './frame-styles'
 
-export default function Frame({ children }) {
-  return <div style={styles.root}>{children}</div>
+function Frame({ children }) {
+	return <div style={styles.root}>{children}</div>
 }
+
+export default Radium(Frame);

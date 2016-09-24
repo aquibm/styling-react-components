@@ -6,7 +6,9 @@ import Frame from './frame'
 import Nav from './nav'
 import Slide from './slide'
 
-import configStyles from './config-styles';
+import { Style } from 'radium'
+import configStyles from './config-styles'
+import styles from './app-styles'
 
 @autobind
 export default class DriftApp extends React.Component {
@@ -31,6 +33,7 @@ export default class DriftApp extends React.Component {
   render() {
     return (
       <Frame>
+      	<Style rules={styles} />
         <Carousel showIndex={this.state.showIndex} nav={this.renderNav()} width={configStyles.imageWidth}>
           <Slide image={require('./images/1.jpg')} title="Imperial Mockery">
             In a show of defiance, rebels have again made mockery of the majesty that is service to the Empire.

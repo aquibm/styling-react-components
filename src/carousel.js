@@ -1,4 +1,5 @@
 import React from 'react'
+import Radium from 'radium'
 import styles from './carousel-styles'
 
 const { node, number } = React.PropTypes
@@ -30,4 +31,4 @@ Carousel.propTypes = {
   width: number
 }
 
-export default Carousel
+export default Radium(Carousel);
