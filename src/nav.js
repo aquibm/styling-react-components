@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react'
 
 function Nav(props) {
   return (
-    <div style={styles.root}>
+    <div>
       <button onClick={props.onPrevious}>&#10094;</button>
       <button onClick={props.onNext}>&#10095;</button>
     </div>

@@ -18,4 +18,4 @@ Slide.propTypes = {
   title: PropTypes.string
 }
 
-export default Radium(Slide)
+export default Slide
