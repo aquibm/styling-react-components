@@ -1,23 +1,19 @@
-import React from 'react'
-import Radium from 'radium'
-import styles from './nav-styles'
-
-const { func, bool } = React.PropTypes
+import React, { PropTypes } from 'react'
 
 function Nav(props) {
   return (
     <div style={styles.root}>
-      <button key="previous" style={styles.previousButton(props.hasPrevious)} onClick={props.onPrevious}>&#10094;</button>
-      <button key="next" style={styles.nextButton(props.hasNext)} onClick={props.onNext}>&#10095;</button>
+      <button onClick={props.onPrevious}>&#10094;</button>
+      <button onClick={props.onNext}>&#10095;</button>
     </div>
   )
 }
 
 Nav.propTypes = {
-  onPrevious: func.isRequired,
-  onNext: func.isRequired,
-  hasPrevious: bool,
-  hasNext: bool
+  onPrevious: PropTypes.func.isRequired,
+  onNext: PropTypes.func.isRequired,
+  hasPrevious: PropTypes.bool,
+  hasNext: PropTypes.bool
 }
 
-export default Radium(Nav);
+export default Nav;
