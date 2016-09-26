@@ -47,6 +47,7 @@
     "webpack-hot-middleware": "~2.4.1"
   },
   "dependencies": {
-    "classnames": "^2.2.5"
+    "classnames": "^2.2.5",
+    "react-styleable": "^2.2.4"
   }
 }
