@@ -2,10 +2,10 @@ import React, { PropTypes } from 'react'
 
 function Slide(props) {
   return (
-    <article style={props.style} className="dft__slide">
+    <article style={props.style}>
       <img src={props.image} alt={props.title} />
-      <footer className="dft__slide__footer">
-        <h2 className="dft__slide__footer__title">{props.title}</h2>
+      <footer>
+        <h2>{props.title}</h2>
         <div>{props.children}</div>
       </footer>
     </article>
